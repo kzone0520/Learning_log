@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '0tdr^x05#tcqu-65w$mbmfqvan&h0b(&9fjp&g00v=xw+_5-%b'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -138,6 +138,10 @@ if os.getcwd() == '/app':
     }
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+ALLOWED_HOSTS = ['kzone0520.herokuapp.com']
+
+
 
 ALLOWED_HOSTS = ['*']
 
