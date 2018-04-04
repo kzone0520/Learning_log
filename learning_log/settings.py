@@ -115,7 +115,7 @@ USE_L10N = True
 
 USE_TZ = False
 
-
+DEBUG = False
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
@@ -141,9 +141,7 @@ ALLOWED_HOSTS = ['kzone0520.herokuapp.com']
 DEBUG = False
 
 
-ALLOWED_HOSTS = ['localhost']
-DEBUG = True
-
+ALLOWED_HOSTS = []
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = 'staticfiles'
