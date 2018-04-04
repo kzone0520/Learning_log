@@ -138,7 +138,8 @@ if os.getcwd() == '/app':
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 ALLOWED_HOSTS = ['kzone0520.herokuapp.com']
-DEBUG = False
+
+DEBUG = True
 
 
 ALLOWED_HOSTS = []
