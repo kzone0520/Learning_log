@@ -24,9 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '0tdr^x05#tcqu-65w$mbmfqvan&h0b(&9fjp&g00v=xw+_5-%b'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
-ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition
@@ -115,7 +113,7 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)
@@ -143,8 +141,9 @@ ALLOWED_HOSTS = ['kzone0520.herokuapp.com']
 DEBUG = False
 
 
+ALLOWED_HOSTS = ['localhost']
+DEBUG = True
 
-ALLOWED_HOSTS = ['*']
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = 'staticfiles'

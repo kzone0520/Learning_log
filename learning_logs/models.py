@@ -8,6 +8,7 @@ class Topic(models.Model):
     date_added = models.DateTimeField(auto_now_add=True)
     owner = models.ForeignKey(User, on_delete=models.PROTECT)  #第一个参数不能和下面一个类里的外键一样加单引号，否则报错
                                                                 #外键的第一个参数必须是一个model或者name of a model
+
     def __str__(self):
         return self.text
 

@@ -1,17 +1,21 @@
 {% extends "learning_logs/base.html" %}
 {% block header %}
   <div class='jumbotron'>
-    <h1>瞎聊什么的小伙伴们来记录你的学习吧。</h1>
+    <h1>小伙伴们来记录你的学习吧。</h1>
   </div>
 {% endblock header %}
 
 {% block content %}
   <h2>
-    <a href="{% url 'users:register' %}">注册</a> 一个账号来制作你自己的学习笔记，
-      列出关于你学了什么的主题.
+    <a href="{% url 'users:register' %}">注册</a>一个账号来制作你自己的学习笔记，
+      列出关于你学了什么的<a href="{% url 'learning_logs:topics' %}">主题</a>.
   </h2>
   <h2>
     不管你学到了关于你主题的任何内容,
-      制作些条目来总结它。--来自奶猪的建议
+      制作些条目来总结它。--来自奶猪的邀请
   </h2>
+  <h4>
+    (如果你是用手机查看的此页面，可点击右上角的三条杠按钮来查看功能。
+    目前此网页内的所有主题都只对自己可见。)
+  </h4>
 {% endblock content %}
